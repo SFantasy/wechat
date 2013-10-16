@@ -1,13 +1,13 @@
 {
-	"name": "wechat-test",
-	"version": "0.0.1",
+    "name": "wechat-test",
+    "version": "0.0.1",
     "main": "app.js",
-	"dependencies": {
+    "dependencies": {
         "debug": "~0.7.2",
-		"express": "~3.0",
+        "express": "~3.0",
         "wechat": "~0.4.0",
         "weixin-robot": "~0.4.5"
-	},
+    },
     "engines": {
         "node": ">=0.6.0",
         "npm": ">=1.1.6"
@@ -16,7 +16,7 @@
         "start": "node app.js"
     },
     "description": "TN wechat test",
-    "repository": "https://github.com/SFantasy/tn-wechat",
+    "repository": "https://github.com/SFantasy/wechat",
     "author": "me@fantasyshao.com",
     "license": "MIT"
 }
