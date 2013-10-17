@@ -17,12 +17,17 @@ Use your own TOKEN to apply developer access to the [Wechat Official Platform](h
 
 ### app.js
 
-Developing...
+Wechat service account DEMO.
+
+#### Dependencies
+
+* wechat
+* connect
 
 ## TODO
 
 * Add menus
-* Use npm modules such as wechat, weixin-robot, etc.
+* Rich reply rules and contents.
 
 ## Lisence
 
