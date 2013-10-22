@@ -22,11 +22,11 @@ Wechat service account DEMO.
 #### Dependencies
 
 * wechat
+* webot (webot-cli)
 * connect
 
 ## TODO
 
-* Add menus
 * Rich reply rules and contents.
 
 ## Lisence
