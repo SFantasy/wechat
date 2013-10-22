@@ -4,22 +4,10 @@
 
 // 配置信息
 var Config = require('./config.js');
+var Menu = require('./lib/menu.js');
 var http = require('http');
 var connect = require('connect');
 var wechat = require('wechat');
-
-var API = wechat.API;
-var api = new API(Config.AppId, Config.AppSecret);
-// 获取AccessToken
-api.getAccessToken(function (err, token) {
-    console.log(token);
-});
-// 自定义菜单
-var menu = Config.Menu;
-
-api.createMenu(menu, function(err, data) {
-
-});
 
 var List = wechat.List;
 List.add('query', [
@@ -76,7 +64,7 @@ app.use('/', wechat(Config.Token, wechat.text(function(message, req, res) {
 
 }).event(function(message, req, res) {
   if (message.Event == 'subscribe') {
-    res.reply('感谢添加途牛旅游网服务号！现在可以开始和我对话啦！\n');
+    res.reply('感谢添加途牛旅游网服务号！现在可以开始和我对话啦!');
   }
 })));
 
