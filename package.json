@@ -7,7 +7,8 @@
         "express": "~3.0",
         "wechat": "~0.5.0",
         "webot": "~0.1.6",
-        "connect": "~2.9.1"
+        "connect": "~2.9.1",
+        "js-yaml": "~2.0.3"
     },
     "engines": {
         "node": ">=0.6.0",
