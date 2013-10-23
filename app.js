@@ -14,10 +14,10 @@ var webot = require('weixin-robot');
 
 var app = express();
 
-var token = tnwechattest;
+var token = 'tnwechattest';
 
 // 添加session支持
-app.use(expess.cookieParser());
+app.use(express.cookieParser());
 app.use(express.session({ secret: 'wechattest', store: new express.session.MemoryStore() }));
 
 // 监听web请求
