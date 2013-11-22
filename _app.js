@@ -4,9 +4,11 @@
 
 // 配置信息
 var Config = require('./config.js');
-var Menu = require('./lib/menu.js');
 var connect = require('connect');
 var wechat = require('wechat');
+
+
+console.log(Config.Token);
 
 var List = wechat.List;
 List.add('query', [
@@ -46,6 +48,8 @@ app.use('/', wechat(Config.Token, wechat.text(function(message, req, res) {
 
   if (input === '出国') {
     res.wait('query');
+  } else if(input === '帮助') {
+    res.reply('回复“出国”，看看你想去哪？');
   } else if (input.length < 2) {
     res.reply('o(╯□╰)o 你到底想说神马捏？');
   } else if (input === '你是谁') {
@@ -56,14 +60,14 @@ app.use('/', wechat(Config.Token, wechat.text(function(message, req, res) {
   
 
 }).location(function(message, req, res) {
-
+  res.reply('俺现在还不想知道你在哪呢');
 }).image(function(message, req, res) {
-
+  res.reply('~(@^_^@)~看不懂图片啦~~');
 }).voice(function(message, req, res) {
-
+  res.reply('语音接口还没调好啦= =');
 }).event(function(message, req, res) {
   if (message.Event == 'subscribe') {
-    res.reply('感谢添加途牛旅游网服务号！现在可以开始和我对话啦!');
+    res.reply('感谢添加途牛旅游网服务号！现在可以开始和我对话啦!（回复‘帮助’，查看现在可以用的功能）');
   }
 })));
 
