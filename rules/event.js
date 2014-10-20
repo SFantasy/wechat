@@ -16,9 +16,8 @@ webot.set('wechat_event', {
         event = event.toLowerCase();
 
         if(event === 'subscribe') {
-            return "感谢关注途牛旅游网服务号！\n" +
-                    "要旅游，找途牛!\n" +
-                    "现在可以和小牛牛对话啦！\n" +
+            return "感谢关注XXX服务号！\n" +
+                    "现在可以和我对话啦！\n" +
                     "(发送“帮助”查看使用指南)";
         } else if(event === 'unsubscribe') {
             return "再见！";

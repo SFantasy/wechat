@@ -4,18 +4,21 @@
     "name": "预定",
     "sub_button": [
     {
-      "type": "click",
+      "type": "view",
       "name": "周边旅游",
+      "url": "http://foo.bar.com",
       "key": "AROUND"
     },
     {
-      "type": "click",
+      "type": "view",
       "name": "国内旅游",
+      "url": "http://foo.bar.com",
       "key": "DEMESTIC"
     },
     {
-      "type": "click",
+      "type": "view",
       "name": "处境旅游",
+      "url": "http://foo.bar.com",
       "key": "ABROAD"
     }]
   },
@@ -25,25 +28,25 @@
     {
       "type": "view",
       "name": "马尔代夫",
-      "url": "http://m.tuniu.com/s/search/q/%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB/city/sh/p/1",
+      "url": "http://foo.bar.com",
       "key": "MALDIVES"
     },
     {
       "type": "view",
       "name": "欧洲",
-      "url": "http://m.tuniu.com/s/search/q/%E6%AC%A7%E6%B4%B2/city/sh/p/1",
+      "url": "http://foo.bar.com",
       "key": "EUROPE"
     },
     {
       "type": "view",
       "name": "泰国",
-      "url": "http://m.tuniu.com/s/search/q/%E6%B3%B0%E5%9B%BD/city/sh/p/1",
+      "url": "http://foo.bar.com",
       "key": "THAILAND"
     },
     {
       "type": "view",
       "name": "香港",
-      "url": "http://m.tuniu.com/s/search/q/%E9%A6%99%E6%B8%AF/city/sh/p/1",
+      "url": "http://foo.bar.com",
       "key": "HONGKONG"
     }]
   },

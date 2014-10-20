@@ -3,10 +3,9 @@
  *
  * Powered by Node.js and weixin-robot, thx.
  *
- * Tuniu, Inc.
- * Author: fantasyshao (blog.fantasyshao.com)
+ * Author: fantasyshao (blog.fantasy.codes)
  * License: MIT
- * 
+ *
  */
 
 var express = require('express');
